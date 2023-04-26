@@ -10,10 +10,6 @@
     href="https://toku-shiru.com/wp-content/themes/cocoon-master/style.css?ver=6.2&amp;fver=20230216084813" media="all">
 
 
-
-
-
-  <link rel="stylesheet" href="https://unpkg.com/scroll-hint@1.1.10/css/scroll-hint.css">
   <script src="https://unpkg.com/scroll-hint@1.1.10/js/scroll-hint.js"></script>
 
 
@@ -55,7 +51,7 @@
     href="https://toku-shiru.com/wp-content/plugins/tablepress/css/build/default.css?ver=2.1&amp;fver=20230407062118"
     media="all">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="scroll-hint.css">
+  <link rel="stylesheet" href="https://unpkg.com/scroll-hint@1.1.10/css/scroll-hint.css">
 </head>
 
 <body
@@ -123,7 +119,7 @@
                   <p style="margin-bottom:0px!important;">おすすめのAGAクリニック</p>
                 </div>
               </div>
-              <div class="js-scrollable table-miniranking scroll-hint is-scrollable is-left-scrollable"
+              <div class="js-scrollable table-miniranking scroll-hint is-scrollable is-left-scrollable is-right-scrollable"
                 style="position:relative;overflow:auto;">
                 <table style="width:auto;height:auto;">
                   <tbody>
@@ -299,6 +295,11 @@
                     </tr>
                   </tbody>
                 </table>
+                <div class="scroll-hint-icon-wrap" data-target="scrollable-icon">
+                  <span class="scroll-hint-icon">
+                    <div class="scroll-hint-text">スクロールできます</div>
+                  </span>
+                </div>
                 <div class="scroll-hint-icon-wrap" data-target="scrollable-icon">
                   <span class="scroll-hint-icon">
                     <div class="scroll-hint-text">スクロールできます</div>
@@ -753,6 +754,19 @@
               </div>
           </article>
       </div>
+      <!--スクロールできます表示-->
+      <script src="https://unpkg.com/scroll-hint@1.1.10/js/scroll-hint.js"></script>
+      <script type="text/javascript">
+        window.onload = function () {
+          new ScrollHint('.js-scrollable', {
+            suggestiveShadow: true,
+            remainingTime: 5e3,
+            i18n: {
+              scrollable: 'スクロールできます'
+            }
+          });
+        }
+      </script>
       </main>
     </div>
   </div>
@@ -779,46 +793,7 @@
       </div>
     </div>
   </footer>
-  <link rel="stylesheet" id="metaslider-flex-slider-css"
-    href="https://toku-shiru.com/wp-content/plugins/ml-slider/assets/sliders/flexslider/flexslider.css?ver=3.29.1&amp;fver=20230327021711"
-    type="text/css" media="all" property="stylesheet">
-  <link rel="stylesheet" id="metaslider-public-css"
-    href="https://toku-shiru.com/wp-content/plugins/ml-slider/assets/metaslider/public.css?ver=3.29.1&amp;fver=20230327021711"
-    type="text/css" media="all" property="stylesheet">
-  <script>
-    const swiper = new Swiper(".swiper", {
-      pagination: {
-        el: ".swiper-pagination"
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-      }
-    });
-  </script>
-  <script src="scroll-hint.js"></script>
-  <script src="https://unpkg.com/scroll-hint@1.1.10/js/scroll-hint.js"></script>
-  <script type="text/javascript">
-    window.onload = function () {
-      new ScrollHint('.js-scrollable', {
-        suggestiveShadow: true,
-        remainingTime: 5e3,
-        i18n: {
-          scrollable: 'スクロールできます'
-        }
-      });
-    }
 
-
-    new ScrollHint('.js-scrollable', {
-      scrollHintIconAppendClass: 'scroll-hint-icon-white', // white-icon will appear
-      applyToParents: true,
-      i18n: {
-        scrollable: 'スクロールできます'
-      }
-    });
-  </script>
-  <script type="text/javascript" id="" src="https://js.ptengine.jp/61a7989s.js"></script>
 </body>
 
 </html>
