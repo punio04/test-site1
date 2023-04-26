@@ -306,3 +306,9 @@ new ScrollHint('.js-scrollable', {
     scrollable: 'スクロールできます'
   }
 });
+
+const ScrollHint = require('scroll-hint');
+new ScrollHint('.js-scrollable');
+
+import ScrollHint from 'scroll-hint';
+new ScrollHint('.js-scrollable');
