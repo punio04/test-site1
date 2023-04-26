@@ -8827,7 +8827,7 @@
       background: linear-gradient(1deg, #d7271e 0%, #e25651 100%);
       box-shadow: 0 3px 0 0 rgba(126, 39, 44, 1);
       border-radius: 30px;
-      margin: 20px auto!important;
+      margin: 20px auto !important;
     }
 
     /******************************************テーブル******************************************/
@@ -9237,7 +9237,7 @@
       }
 
       .komidashi06 p {
-        font-size: 1.3em !important;
+        font-size: 1em !important;
       }
 
       .ribbon_point_title_s03 {
@@ -9334,13 +9334,15 @@
     }
 
     .mainkiji p {
-      padding: 0px!important;
+      padding: 0px !important;
     }
 
     @media screen and (max-width: 480px) {
       .komidashi06 {
+        padding: 0 15px;
         margin: 30px 0 20px 0 !important;
       }
+
       .entry-content {
         margin-top: 1em;
         margin-bottom: 0em;
@@ -9355,6 +9357,7 @@
       .navi-footer-in>.menu-footer li.menu-item {
         width: 100%;
       }
+
       .navi-footer-in>.menu-footer {
         display: revert;
       }
@@ -9367,6 +9370,3 @@
         font-size: 14px;
       }
     }
-
-
-
